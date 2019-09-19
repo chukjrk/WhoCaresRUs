@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import Home from './components/homeComponent/home';
+import Header from './components/headerComponent/header';
+import Comment from './components/homeComponent/comments'
+import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { addComment } from './actions';
+
+// import './Assets/css/default.min.css'
 
 function App() {
+  // const [data, setData] = useState([]);
+	const dispatch = useDispatch();
+
+  useEffect(() => {
+  	let mounted = true;
+
+  	const loadData = async() => {
+  		const result = await axios.get('https://jsonplaceholder.typicode.com/comments');
+  		if(mounted){
+  			console.log(result.data)
+  			dispatch(addComment(result.data))
+  		}
+  	};
+  	loadData();
+  	
+  	return () => {
+  		mounted = false;
+  	}
+  },[]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    	<Header />
+    		<Home />
+    	<Comment />
     </div>
   );
 }
