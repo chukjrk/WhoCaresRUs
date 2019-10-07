@@ -1,39 +1,37 @@
-import React, {useEffect} from 'react';
-import Home from './components/homeComponent/home';
-import Header from './components/headerComponent/header';
-import Comment from './components/homeComponent/comments'
+import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
+
+import Home from './components/homeComponent/home';
+import Header from './components/headerComponent/header';
+import Comment from './components/homeComponent/comments';
 import { addComment } from './actions';
 
-// import './Assets/css/default.min.css'
-
 function App() {
-  // const [data, setData] = useState([]);
-	const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
-  	let mounted = true;
+    let mounted = true;
 
-  	const loadData = async() => {
-  		const result = await axios.get('https://jsonplaceholder.typicode.com/comments');
-  		if(mounted){
-  			console.log(result.data)
-  			dispatch(addComment(result.data))
-  		}
-  	};
-  	loadData();
-  	
-  	return () => {
-  		mounted = false;
-  	}
-  },[]);
+    const loadData = async() => {
+      const result = await axios.get('https://jsonplaceholder.typicode.com/comments');
+      if (mounted) {
+        console.log(result.data);
+        dispatch(addComment(result.data));
+      }
+    };
+    loadData();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   return (
     <div className="App">
-    	<Header />
-    		<Home />
-    	<Comment />
+      <Header />
+      <Home />
+      <Comment />
     </div>
   );
 }

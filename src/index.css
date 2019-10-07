@@ -50,7 +50,7 @@ nav ul {
 	margin-bottom: 40px;
 }
 .grayContainer{
-	background-color: gray;
+	background-color: #63c2de;
 	height: 350px;
 	width: 100%;
 	position: absolute;
@@ -113,7 +113,6 @@ nav ul {
 }
 
 .commentSection {
-	/*display: block;*/
 	margin-top: 60px;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -126,8 +125,6 @@ nav ul {
 }
 
 .commentBody {
-	/*display: inline-block;*/
-	/*flexWrap: wrap;*/
 	border-radius: 2px;
 	white-space: normal;
 	background-color: #f2e7df;
@@ -152,13 +149,11 @@ nav ul {
 	padding-bottom: 20px;
 }
 .commentName {
-	/*float: left;*/
 	font-size: 12px;
 	font-weight: bold;
 	padding-left: 5px;
 }
 
 .commentEmail {
-	/*float: right;*/
 	font-size: 12px;
 }
