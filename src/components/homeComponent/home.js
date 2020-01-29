@@ -13,7 +13,6 @@ function Home() {
       const image = user[0]["imageURL"];
       setuserName(name);
       setuserImage(image);
-      console.log("These are comments", userName);
     }
   });
 
