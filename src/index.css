@@ -44,116 +44,113 @@ nav ul {
 }
 
 .homeContainer {
-	padding-bottom: 250px;
-	/*border-bottom-style: solid;*/
-	/*border-bottom-width: 1px;*/
-	margin-bottom: 40px;
+  padding-bottom: 250px;
+  /*border-bottom-style: solid;*/
+  /*border-bottom-width: 1px;*/
+  margin-bottom: 40px;
 }
-.grayContainer{
-	background-color: #63c2de;
-	height: 350px;
-	width: 100%;
-	position: absolute;
-	text-align: center;
+.grayContainer {
+  background-color: #63c2de;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
 }
 
 .jumbo {
-	vertical-align: center;
-	top: 30%;
-	transform: translate(0, 30%);
+  vertical-align: center;
+  top: 30%;
+  transform: translate(0, 30%);
 }
 
 .jumboTitle {
-	color: white;
-	font-size: 70px;
+  color: white;
+  font-size: 70px;
 }
 
 .jumboDesc {
-	color: white;
+  color: white;
 }
 
 .card {
-	background-color: white;
-	width: 250px;
-	max-height: 300px;
-	height: 250px;
-	text-align: center;
-	border-radius: 0px;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	margin: 15px;
-	display: inline-block;
-	padding-bottom: 40px;
+  background-color: white;
+  width: 250px;
+  max-height: 300px;
+  height: 250px;
+  text-align: center;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  display: inline-block;
+  padding-bottom: 40px;
 }
 
 .card .container {
-	padding: 2px;
+  padding: 2px;
 }
 
 .card p {
-	font-size: 12px
+  font-size: 12px;
 }
 
-
 .cardImg {
-	height: 40px;
-	width: 60px;
-	margin-top: 20px;
+  height: 40px;
+  width: 60px;
+  margin-top: 20px;
 }
 
 .displayCard {
-	display: block;
-	padding-top: 5%;
-	margin-left: auto;
-	margin-right: auto;	
-	position: relative;
-	top:60%;
-	text-align: center;
-	padding-bottom: 70px;
-	transform: translate(0, 40%);
+  display: block;
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 60%;
+  text-align: center;
+  padding-bottom: 70px;
+  transform: translate(0, 40%);
 }
 
 .commentSection {
-	margin-top: 60px;
-	margin-left: 40px;
-	margin-right: 40px;
-	text-align: left;
-	margin-bottom: 40px
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
-.commentHeader{
-	padding-bottom: 30px;
+.commentHeader {
+  padding-bottom: 30px;
 }
 
 .commentBody {
-	border-radius: 2px;
-	white-space: normal;
-	background-color: #f2e7df;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.05);
-
+  border-radius: 2px;
+  white-space: normal;
+  background-color: #f2e7df;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
 }
 
 .commentBody p {
-	position: relative;
-	display: inline-block;
-	margin: 10px;
-	top: 50%;
-	vertical-align: center;
-	transform: translate(0, 0);
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  top: 50%;
+  vertical-align: center;
+  transform: translate(0, 0);
 }
-
 
 .commentInfo {
-	display: flex;
-	justify-Content: space-between;
-	flexWrap: wrap;
-	padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flexwrap: wrap;
+  padding-bottom: 20px;
 }
 .commentName {
-	font-size: 12px;
-	font-weight: bold;
-	padding-left: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 5px;
 }
 
 .commentEmail {
-	font-size: 12px;
+  font-size: 12px;
 }

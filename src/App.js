@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import axios from 'axios';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from "react";
+import axios from "axios";
+import { useDispatch } from "react-redux";
 
-import Home from './components/homeComponent/home';
-import Header from './components/headerComponent/header';
-import Comment from './components/homeComponent/comments';
-import { addComment } from './actions';
+import Home from "./components/homeComponent/home";
+import Header from "./components/headerComponent/header";
+import Comment from "./components/homeComponent/comments";
+import { addComment } from "./actions";
 
 function App() {
   const dispatch = useDispatch();
@@ -13,8 +13,10 @@ function App() {
   useEffect(() => {
     let mounted = true;
 
-    const loadData = async() => {
-      const result = await axios.get('https://jsonplaceholder.typicode.com/comments');
+    const loadData = async () => {
+      const result = await axios.get(
+        "https://jsonplaceholder.typicode.com/comments"
+      );
       if (mounted) {
         console.log(result.data);
         dispatch(addComment(result.data));
