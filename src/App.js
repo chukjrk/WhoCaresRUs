@@ -18,7 +18,6 @@ function App() {
         "https://jsonplaceholder.typicode.com/comments"
       );
       if (mounted) {
-        console.log(result.data);
         dispatch(addComment(result.data));
       }
     };
